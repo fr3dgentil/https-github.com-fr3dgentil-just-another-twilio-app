@@ -1,0 +1,49 @@
+{
+  "name": "just-another-twilio-app",
+  "version": "1.0.0",
+  "description": "Just another Twilio app",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "twilio"
+  ],
+  "author": "Frédéric Gentil",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "colors": "^1.1.2",
+    "express": "^4.15.4",
+    "json-stringify-safe": "^5.0.1",
+    "minimal-either-monad-with-errors-handling": "^1.0.1",
+    "mongo-express-xml": "^1.0.2",
+    "mongodb": "^2.2.31",
+    "ramda": "^0.24.1",
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1",
+    "request": "^2.81.0",
+    "twilio": "^3.6.1",
+    "xmltojson": "^1.3.5"
+  },
+  "devDependencies": {
+    "babelify": "^7.3.0",
+    "grunt": "^1.0.1",
+    "grunt-browserify": "^5.2.0",
+    "grunt-contrib-watch": "^1.0.0"
+  },
+  "browserify": {
+    "transform": [
+      [
+        "babelify",
+        {
+          "presets": [
+            "es2016",
+            "react"
+          ]
+        }
+      ]
+    ]
+  }
+}
